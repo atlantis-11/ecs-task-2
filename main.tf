@@ -23,7 +23,7 @@ locals {
 }
 
 locals {
-  svc_name       = "${var.app_name}-svc"
+  svc_name       = "${var.app_name}-svc-${local.env}"
   container_name = "${var.app_name}-container"
 }
 
